@@ -25,11 +25,6 @@
   text-decoration: none;
 }
 
-/* ==== Эффект нажатия ==== */
-//  .main-button:active {
-// transform: scale(0.98);
-//  }
-
 /* ==== Стелочки для карусели ==== */
 .arrow-button {
   width: 40.99px;
