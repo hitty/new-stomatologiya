@@ -1,0 +1,200 @@
+.branch-addresses {
+  width: 1200px;
+  height: 700px;
+  margin: 0 auto;
+  padding: 150px 20px 0;
+  color: #E8E6D4;
+  font-family: 'Inter', sans-serif;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.branch-addresses__title {
+  width: 352px;
+  height: 48px;
+  margin: 0 0 29px 0;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  color: #E8E6D4;
+}
+
+.branch-addresses__buttons {
+  width: 1160px;
+  height: 50px;
+  margin-bottom: 20px; /* только снизу */
+  display: flex;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.branch-addresses__button {
+  width: 224px;
+  height: 50px;
+  padding: 0;
+  border-radius: 6px;
+  border: 1px solid #76824A;
+  background-color: rgba(132, 168, 172, 0.1);
+  color: #E8E6D4;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.branch-addresses__button:hover,
+.branch-addresses__button.active {
+  background-color: #76824A;
+  color: #E8E6D4;
+}
+
+.branch-addresses__content {
+  display: flex;
+  gap: 10px;
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+
+.branch-addresses__addresses {
+  width: 380px;
+  height: 406px;
+  border-radius: 8px;
+  background-color: #E8E6D4;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+.branch-address-card {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+
+.branch-address-label,
+.branch-schedule-label,
+.branch-hotline-label {
+  margin: 0 0 10px 0;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #76824A;
+  height: 12px;
+}
+
+.branch-address-text {
+  margin: 0 0 40px 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  color: #18383C;
+  height: 19px;
+}
+
+.branch-schedule-text,
+.branch-schedule-text1 {
+  font-size: 16px;
+  line-height: 100%;
+  color: #18383C;
+  height: 19px;
+}
+
+.branch-schedule-text {
+  margin: 0 0 5px 0;
+}
+
+.branch-schedule-text1 {
+  margin: 0 0 40px 0;
+}
+
+.branch-schedule-text strong,
+.branch-schedule-text1 strong {
+  font-weight: 700;
+  color: #18383C;
+}
+
+.branch-hotline-text {
+  margin: 0 0 40px 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #18383C;
+  height: 19px;
+}
+
+.branch-appointment-button {
+  width: 213px;
+  height: 59px;
+  border-radius: 30px;
+  border: 1px solid #76824A;
+  background-color: #76824A;
+  color: #E8E6D4;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 0;
+  user-select: none;
+}
+
+.branch-appointment-button:hover {
+  background-color: #E8E6D4;
+  color: #76824A;
+}
+
+.branch-addresses__map {
+  width: 770px;
+  height: 406px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.branch-addresses__map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+/* ====================== */
+/* ✅ Модификации для Химок */
+/* ====================== */
+
+.branch-addresses.khimki-active {
+  height: 820px;
+}
+
+.branch-addresses__addresses.khimki-layout {
+  height: 523px;
+}
+
+.branch-addresses__map.khimki-layout {
+  width: 770px;
+  height: 523px;
+}
+
+.branch-addresses__map.khimki-layout iframe {
+  height: 100%;
+}
+
+.branch-address-card.khimki-layout {
+  height: 523px;
+}
+
+.branch-appointment-button.khimki-button {
+  width: 340px;
+  height: 59px;
+}

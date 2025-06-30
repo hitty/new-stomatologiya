@@ -1,0 +1,131 @@
+.services-clinic-block {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.services-clinic-title {
+  width: 1160px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 100px 20px 30px;
+}
+
+.title-part1 {
+  color: #E8E6D4;
+}
+
+.title-part2 {
+  color: #76824A;
+}
+
+.services-groups-wrapper {
+  width: 1160px;
+  display: grid;
+  grid-template-columns: repeat(2, 575px);
+  gap: 9px 10px;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.service-group {
+  background-color: #E8E6D4;
+  width: 575px;
+  border-radius: 8px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.service-group__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 515px;
+}
+
+.service-group__title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  color: #76824A;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.service-group__icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-group__icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.service-group__services {
+  display: flex;
+  gap: 50px;
+  flex-wrap: nowrap;
+}
+
+.service-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 232.5px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.service-item__icon {
+  margin-top: 1.5px;
+  margin-bottom: 1.5px;
+}
+
+.service-item__text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #18383C;
+  letter-spacing: -1%;
+  line-height: 100%;
+}
+
+.services-button-wrapper {
+  width: 1160px;
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px 100px;
+}
+
+.special-offers__more-btn {
+  width: 263px;
+  height: 59px;
+  border-radius: 30px;
+}
+
+.services-more-btn {
+  width: 260px;
+  height: 59px;
+  border-radius: 30px;
+}

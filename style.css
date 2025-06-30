@@ -1,0 +1,40 @@
+/*
+Theme Name: frymstom
+Author: Frizya
+Version: 1.0
+*/
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+/* Универсальная основная кнопка */
+.main-button {
+  display: inline-block;
+  padding: 0 24px;
+  height: 45px;
+  border-radius: 30px;
+  border: 1px solid #E8E6D4;
+  background-color: #76824A;
+  color: #E8E6D4;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  line-height: 45px;
+  white-space: nowrap;
+}
+
+/* Ховер */
+.main-button:hover {
+  background-color: #E8E6D4;
+  border: 1px solid #76824A;
+  color: #76824A;
+}
+
+/* Эффект нажатия */
+.main-button:active {
+  transform: scale(0.98);
+}

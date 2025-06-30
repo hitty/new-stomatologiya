@@ -1,0 +1,83 @@
+.certificates-section {
+  width: 100%;
+  padding: 0 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.certificates-container {
+  width: 100%;
+  max-width: 1160px;
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+}
+
+.certificates-container.has-carousel {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.certificates-container.has-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.cert-item {
+  width: 282.5px;
+  height: 396.49px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.cert-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+}
+
+.certificates-controls {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.arrow-button {
+  width: 41px;
+  height: 40px;
+  border-radius: 100px;
+  background-color: #76824A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #E8E6D4;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.arrow-button svg {
+  width: 7px;
+  height: 12px;
+}
+
+.arrow-button svg path {
+  stroke: #E8E6D4;
+  stroke-width: 2;
+  transition: stroke 0.3s ease;
+}
+
+.arrow-button:hover {
+  background-color: #E8E6D4;
+  border-color: #76824A;
+}
+
+.arrow-button:hover svg path {
+  stroke: #76824A;
+}

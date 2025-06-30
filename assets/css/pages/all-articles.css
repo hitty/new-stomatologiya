@@ -1,0 +1,155 @@
+/* Основные стили страницы */
+.all-articles-page {
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+/* Заголовок */
+.articles-header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.articles-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  margin-bottom: 30px;
+}
+
+.title-part-1 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  color: #E8E6D4;
+}
+
+.title-part-2 {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 40px;
+  line-height: 100%;
+  color: #76824A;
+  margin-left: 10px;
+}
+
+/* Фильтры */
+.articles-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+  min-height: 50px;
+  margin-bottom: 20px;
+}
+
+/* Сетка статей */
+.articles-list {
+  display: grid;
+  grid-template-columns: repeat(4, 282.5px);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.article-card {
+  width: 282.5px;
+  height: 447px;
+  padding-bottom: 20px;
+  background: #E8E6D4;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.article-photo {
+  width: 282.5px;
+  height: 200px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.article-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article-content {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.article-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  color: #18383C;
+  margin: 0;
+}
+
+.article-desc {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #18383C;
+  height: 85px;
+  overflow: hidden;
+}
+
+.article-footer {
+  padding-top: 20px;
+  border-top: 1px solid rgba(118, 130, 74, 0.2);
+  margin-top: auto;
+}
+
+.read-more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 35px;
+  text-decoration: none;
+}
+
+.read-more span {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  color: #76824A;
+}
+
+.no-articles {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 20px;
+  color: #18383C;
+}
+
+/* Анимация фильтрации */
+.article-card.hidden {
+  display: none;
+  opacity: 0;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+  
+  .articles-list {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}

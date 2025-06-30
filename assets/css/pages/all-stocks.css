@@ -1,0 +1,131 @@
+.all-stocks-section {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.all-stocks-cards {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 30px;
+  justify-content: flex-start;
+}
+
+/* Используются стили .special-card и всё, что уже было ранее */
+.special-card {
+  width: 380px;
+  height: 553px;
+  border-radius: 8px;
+  background-color: #E8E6D4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.special-card__content {
+  padding: 40px 20px 0;
+}
+
+.special-card__name-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.special-card__name {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  color: #18383C;
+  width: 294px;
+}
+
+.special-card__info {
+  width: 26px;
+  height: 26px;
+  border-radius: 100px;
+  background-color: #84A8AC;
+  color: #E8E6D4;
+  font-weight: 700;
+  font-family: Inter, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+
+.special-card__description {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #18383C;
+  margin-bottom: 10px;
+}
+
+.special-card__price {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  color: #76824A;
+  margin-bottom: 30px;
+}
+
+.special-card__photo {
+  width: 380px;
+  height: 270px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.special-card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.special-card__button {
+  width: 209px;
+  height: 45px;
+  line-height: 45px;
+}
+
+
+
+
+
+
+.special-offers__intro {
+  width: 100%;
+  max-width: 800px;
+  max-height: 96px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 20px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.special-offers__intro-text {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0;
+  margin: 0;
+  display: inline;
+  text-align: center;
+}
+
+.special-offers__intro-light {
+  color: #E8E6D4;
+}
+
+.special-offers__intro-colored {
+  color: #76824A;
+  font-style: italic;
+  margin-left: 10px;
+}

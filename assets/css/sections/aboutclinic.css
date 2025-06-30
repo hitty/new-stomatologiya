@@ -1,0 +1,159 @@
+.about-clinic {
+  width: 1200px;
+  padding: 0 0 100px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.about-clinic__top {
+  width: 1160px;
+  display: flex;
+  gap: 10px;
+  padding: 0 20px;
+
+}
+
+.about-clinic__card {
+  width: 575px;
+  height: 490px;
+  background: #E8E6D4;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-clinic__title {
+  width: 515px;
+  height: 48px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  color: #76824A;
+  margin: 40px 30px 0;
+}
+
+.about-clinic__text {
+  width: 515px;
+  height: 280px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #18383C;
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+}
+
+.about-clinic__photo {
+  width: 575px;
+  height: 490px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.about-clinic__bottom {
+  width: 1160px;
+  display: flex;
+  gap: 10px;
+  padding: 0 20px;
+}
+
+.about-clinic__left-photos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-clinic__small-photo {
+  width: 282.5px;
+  height: 200px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.about-clinic__tall-photo {
+  width: 282.5px;
+  height: 410px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+
+/* Карточка с информацией - финальная версия */
+.about-clinic__info-card {
+  width: 575px;
+  height: 410px;
+  background: #E8E6D4;
+  border-radius: 8px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.about-clinic__info-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 30px 0 30px;
+  box-sizing: border-box;
+}
+
+.about-clinic__info-text {
+  width: 515px;
+  height: 160px;
+  margin: 0 0 40px 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #18383C;
+}
+
+.about-clinic__info-text p {
+  margin: 0 0 10px 0;
+}
+
+.about-clinic__info-text p:last-child {
+  margin-bottom: 0;
+}
+
+.about-clinic__info-text span.highlight {
+  color: #76824A;
+  background: transparent;
+}
+
+/* Кнопка - финальная версия */
+.about-clinic__btn {
+  width: 231px;
+  height: 60px;
+  padding: 22px 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 40px;
+  background: #76824A;
+  color: #E8E6D4;
+  border: 1px solid #76824A;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin-left: 0;
+  transition: all 0.3s ease;
+}
+
+.about-clinic__btn:hover {
+  background: #E8E6D4;
+  color: #76824A;
+}

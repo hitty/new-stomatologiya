@@ -1,0 +1,229 @@
+.doctors-section {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.doctors-container {
+  width: 100%;
+  position: relative;
+}
+
+.doctors-header {
+  width: 1160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 20px 30px;
+}
+
+.doctors-text {
+  width: 575px;
+}
+
+.doctors-title {
+  display: flex;
+  gap: 8px;
+  height: 48px;
+}
+
+.doctors-title-main {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  color: #E8E6D4;
+}
+
+.doctors-title-sub {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 40px;
+  line-height: 100%;
+  color: #76824A;
+}
+
+.doctors-description {
+  margin-top: 20px;
+  width: 575px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0;
+  vertical-align: middle;
+  color: #E8E6D4;
+}
+
+.doctors-nav {
+  display: flex;
+  gap: 10px;
+}
+
+.doctors-nav-btn {
+  width: 41px;
+  height: 40px;
+  border-radius: 100px;
+  border: 1px solid #E8E6D4;
+  background-color: #76824A;
+  cursor: pointer;
+  position: relative;
+}
+
+.doctors-nav-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6.99px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+}
+
+.doctors-nav-btn.prev::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='7' height='12' viewBox='0 0 7 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 1L1 6L6 11' stroke='%23E8E6D4' stroke-width='1.5'/%3E%3C/svg%3E");
+}
+
+.doctors-nav-btn.next::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='7' height='12' viewBox='0 0 7 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L1 11' stroke='%23E8E6D4' stroke-width='1.5'/%3E%3C/svg%3E");
+}
+
+.doctors-nav-btn:hover,
+.doctors-nav-btn:active {
+  background-color: #E8E6D4;
+  border-color: #76824A;
+}
+
+.doctors-nav-btn.prev:hover::before,
+.doctors-nav-btn.prev:active::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='7' height='12' viewBox='0 0 7 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 1L1 6L6 11' stroke='%2376824A' stroke-width='1.5'/%3E%3C/svg%3E");
+}
+
+.doctors-nav-btn.next:hover::before,
+.doctors-nav-btn.next:active::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='7' height='12' viewBox='0 0 7 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L1 11' stroke='%2376824A' stroke-width='1.5'/%3E%3C/svg%3E");
+}
+
+.doctors-cards-wrapper {
+  width: 1200px;
+  overflow: hidden;
+  padding-left: 20px;
+}
+
+.doctors-cards-track {
+  display: flex;
+  gap: 10px;
+  transition: transform 0.4s ease;
+  will-change: transform;
+}
+
+.doctor-card {
+  display: flex;
+  flex-direction: column;
+  width: 282px;
+  background-color: #E8E6D4;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  padding-bottom: 20px;
+  gap: 10px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.doctor-card:hover {
+  transform: scale(1.03);
+}
+
+/* Фото врача */
+.doctor-photo {
+  width: 282px;
+  height: 282px;
+  border-radius: 6px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Контейнер с текстом */
+.doctor-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  gap: 0;
+  height: 100%;
+}
+
+/* Имя врача */
+.doctor-name {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  color: #18383C;
+  margin-bottom: 10px;
+  vertical-align: middle;
+}
+
+/* Должность врача */
+.doctor-description {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  color: #18383C;
+  margin-bottom: 20px;
+  vertical-align: middle;
+}
+
+/* Стаж врача */
+.doctor-experience {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #76824A;
+  margin-top: auto;
+  vertical-align: middle;
+}
+
+.doctors-button-wrapper {
+  width: 1160px;
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px 0;
+}
+
+.doctors-view-all {
+  width: 270px;
+  height: 60px;
+  padding: 0;
+  border: 1px solid #E8E6D4;
+  border-radius: 30px;
+  background-color: #76824A;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 60px;
+  color: #E8E6D4;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.doctors-view-all:hover,
+.doctors-view-all:active {
+  background-color: #E8E6D4;
+  border-color: #76824A;
+  color: #76824A;
+}

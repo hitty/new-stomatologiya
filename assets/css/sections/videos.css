@@ -1,0 +1,50 @@
+.videos-section {
+  width: 1200px;
+  height: 793.57px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.videos-section .container {
+  width: 1160px;
+  padding: 0 0 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.video-title {
+  width: 880px;
+  height: 96px;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  color: #E8E6D4;
+}
+
+.video-title .highlight {
+  color: #76824A;
+  font-style: italic;
+}
+
+.video-wrapper {
+  width: 1160px;
+  height: 567.57px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}

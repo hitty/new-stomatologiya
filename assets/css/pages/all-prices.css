@@ -1,0 +1,239 @@
+/* ===== ОБЩИЙ СТИЛЬ ===== */
+
+.prices-section {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== ЗАГОЛОВОК: ДЕСКТОП ===== */
+.page-title {
+  width: 100%;
+  max-width: 1160px;
+  height: 96px;
+  margin: 0 auto 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.page-title h1 {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  color: #E8E6D4;
+  margin: 0;
+}
+
+.page-title h1 span {
+  display: block;
+  font-style: italic;
+  color: #76824A;
+}
+
+.accordion-item {
+  border-top: 1px solid #76824A33;
+}
+
+.accordion-header {
+  width: 1160px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.category-title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  color: #E8E6D4;
+}
+
+.accordion-toggle {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 100px;
+  background-color: #E8E6D4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.accordion-toggle svg {
+  width: 16px;
+  height: 16px;
+  color: #76824A;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.accordion-toggle:hover {
+  background-color: #76824A;
+}
+
+.accordion-toggle:hover svg {
+  color: #E8E6D4;
+}
+
+.accordion-toggle.open {
+  background-color: #76824A;
+}
+
+.accordion-toggle.open svg {
+  color: #E8E6D4;
+  transform: rotate(45deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 1000px;
+}
+
+.service-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  gap: 20px;
+  font-family: Inter, sans-serif;
+  line-height: 100%;
+  box-sizing: border-box;
+}
+
+.service-row.even {
+  background-color: #76824A33;
+}
+
+.service-row.odd {
+  background-color: #18383C;
+}
+
+.service-names {
+  font-weight: 400;
+  font-size: 14px;
+  color: #E8E6D4;
+  flex: 1 1 auto;
+  word-break: break-word;
+}
+
+.service-price {
+  font-weight: 600;
+  font-size: 16px;
+  color: #E8E6D4;
+  text-align: right;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+
+/* ===== МОБИЛЬНАЯ АДАПТАЦИЯ ===== */
+@media (max-width: 768px) {
+  .page-title {
+    width: 300px;
+    height: 87px;
+    margin: 0 auto 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .page-title h1 {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #E8E6D4;
+    margin: 0;
+    vertical-align: middle;
+  }
+
+  .page-title h1 span {
+    display: block;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #76824A;
+    vertical-align: middle;
+  }
+
+  .accordion-header {
+    width: 300px;
+    height: auto;
+    padding: 15px 0;
+    border-top: 1px solid #76824A33;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .category-title {
+    font-size: 16px;
+    line-height: 130%;
+    word-break: break-word;
+    text-align: left;
+  }
+
+  .accordion-toggle {
+    flex-shrink: 0;
+    margin-left: 20px;
+  }
+
+  .accordion-content {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .service-row {
+    width: 300px;
+    padding: 10px 20px;
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 71px;
+    flex-wrap: nowrap;
+  }
+
+  .service-name {
+    font-size: 14px;
+    color: #E8E6D4;
+    font-weight: 400;
+    flex: 1 1 auto;
+    word-break: break-word;
+    white-space: normal;
+  }
+
+  .service-price {
+    font-size: 16px;
+    color: #E8E6D4;
+    font-weight: 600;
+    text-align: right;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-left: 20px;
+  }
+}
