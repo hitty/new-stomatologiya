@@ -31,7 +31,7 @@ global $wpdb, $clinics_list, $services_categories, $doctors_list, $stomatology_c
 		  $gets[ $key ] = $val;
 	  }
   }
-  $clinic  = get_query_var( 'item' ) ?? '';
+  $clinic  = $gets['clinic_q'] ?? '';
   $service = $gets['service_q'] ?? '';
   $fio     = urldecode( $gets['fio_q'] ?? '' );
   $aged    = $gets['aged_q' ]  ?? '' ;
@@ -64,7 +64,7 @@ global $wpdb, $clinics_list, $services_categories, $doctors_list, $stomatology_c
                       <select class="form-control select2-enable" name="clinic_q">
                           <option value="">Все клиники</option>
 		                  <?php foreach($clinics_list as $clinics_item) : ?>
-                              <option value="<?=$clinics_item['slug']?>" <?php if($clinic == $clinics_item['slug']) : ?> selected="selected"<?php endif?>><?=$clinics_item['title']?></option>
+                              <option value="<?=$clinics_item['id']?>" <?php if($clinic == $clinics_item['id']) : ?> selected="selected"<?php endif?>><?=$clinics_item['title']?></option>
 		                  <?php endforeach; ?>
                       </select>
                   </div>
@@ -96,8 +96,8 @@ global $wpdb, $clinics_list, $services_categories, $doctors_list, $stomatology_c
 	          if ( ! empty( $aged ) && ! in_array( $aged, $ages ) ) {
 		          $show = false;
 	          }
-	          if ( ! empty( $clinic ) && ! multi_array_search( $clinic, $doctor['clinics'] ) ) {
-		          $show = false;
+	          if ( !empty( $clinic ) && !multi_array_search( $clinic, $doctor['clinics'] ) ) {
+                  $show = false;
 	          }
 	          if ( ! empty( $fio ) && ! preg_match( "#" . $fio . "#ui", $doctor['title'] ) ) {
 		          $show = false;
