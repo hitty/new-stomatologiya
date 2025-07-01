@@ -29,7 +29,9 @@ function yourdent_enqueue_styles() {
     'recordreception'       => '/assets/css/sections/recordreception.css',
     'equip-tech'            => '/assets/css/sections/equip-tech.css',
     'reviews-section'       => '/assets/css/sections/reviews.css',
-    'branch-addresses'       => '/assets/css/sections/branch-addresses.css',
+    'select2-vendor'        => '/assets/css/vendor/select2.min.css',
+    'form'                  => '/assets/css/widgets/form.css',
+    'branch-addresses'      => '/assets/css/sections/branch-addresses.css',
   ];
 
   foreach ($styles as $handle => $path) {
@@ -102,7 +104,11 @@ function yourdent_enqueue_scripts() {
   }
 
   // Отзывы с Яндекс Карт
-  wp_enqueue_script('yourdent-reviews', get_template_directory_uri() . '/assets/js/reviews.js', ['jquery'], filemtime(get_template_directory() . '/assets/js/sections/reviews.js'), true);
+  wp_enqueue_script('yourdent-reviews', get_template_directory_uri() . '/assets/js/reviews.js', ['jquery'], filemtime(get_template_directory() . '/assets/js/reviews.js'), true);
+
+  //Select2
+  wp_enqueue_script('yourdent-select2', get_template_directory_uri() . '/assets/js/vendor/select2.min.js', ['jquery'], filemtime( get_template_directory() . '/assets/js/vendor/select2.min.js' ), true);
+  wp_enqueue_script('yourdent-form', get_template_directory_uri() . '/assets/js/form.js', ['yourdent-select2'], filemtime( get_template_directory() . '/assets/js/form.js' ), true);
 
   // Карусель сертификатов
   if (is_page_template('templates/sections/certificates.php')) {

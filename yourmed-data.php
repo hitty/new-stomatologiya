@@ -1,6 +1,6 @@
 <?php
 $dir = wp_get_upload_dir();
-$cached_file = '/home/admin/web/yourmed24.ru/public_html/wp-content/themes/stomatologiya/yourmed_saved_data.log';
+$cached_file = get_template_directory() . '/yourmed_saved_data.log';
 if( !file_exists($cached_file)) file_put_contents( $cached_file, '');
 
 $data        = wp_cache_get( 'yourmed_saved_data' );

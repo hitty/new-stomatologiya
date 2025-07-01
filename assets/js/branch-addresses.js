@@ -34,11 +34,11 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   function clearContainers() {
-    addressesContainer.innerHTML = '';
-    mapContainer.innerHTML = '';
-    addressesContainer.classList.remove('khimki-layout');
-    mapContainer.classList.remove('khimki-layout');
-    branchSection.classList.remove('khimki-active');
+    if( addressesContainer ) addressesContainer.innerHTML = '';
+    if( mapContainer) mapContainer.innerHTML = '';
+    if( addressesContainer) addressesContainer.classList.remove('khimki-layout');
+    if( mapContainer ) mapContainer.classList.remove('khimki-layout');
+    if( branchSection ) branchSection.classList.remove('khimki-active');
   }
 
   function createAppointmentButton(isKhimki = false) {
@@ -155,13 +155,13 @@ document.addEventListener("DOMContentLoaded", function () {
       addressesContainer.classList.add('khimki-layout');
       mapContainer.classList.add('khimki-layout');
       const card = createKhimkiCard(branchesData[branchName].addresses);
-      addressesContainer.appendChild(card);
+      if( addressesContainer) addressesContainer.appendChild(card);
     } else {
       const data = branchesData[branchName];
       data.addresses.forEach((addr, idx) => {
         const card = createDefaultCard(addr);
         if (idx < data.addresses.length - 1) card.style.marginBottom = '10px';
-        addressesContainer.appendChild(card);
+        if( addressesContainer) addressesContainer.appendChild(card);
       });
     }
 
@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function () {
     iframe.src = branchesData[branchName].mapSrc;
     iframe.loading = 'lazy';
     iframe.referrerPolicy = 'no-referrer-when-downgrade';
-    mapContainer.appendChild(iframe);
+    if( mapContainer ) mapContainer.appendChild(iframe);
   }
 
   buttons.forEach(btn => {
