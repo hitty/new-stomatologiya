@@ -21,21 +21,28 @@
 
 .popup-wrapper {
     padding: 0;
-    /* width: 90%; */
+    width: 90%;
     max-width: 1200px;
     position: relative;
-    /* border-radius: 24px; */
-    background: #FFF;
-    overflow: hidden;
     background: #18383C;
+    overflow: hidden;
+    transition: all .4s ease-in-out;
+    transform: translateY(0);
+}
+
+.hidden .popup-wrapper {
+    transform: translateY(100px);
 }
 
 .popup-form {
     height: 100%;
     display: flex;
-    flex-wrap: nowrap; /* важно для контента, чтобы он не заезжал под скролл */
-    align-items: center; /* чтобы padding добавлялся поверх ширины */
+    flex-wrap: nowrap;
+    align-items: center;
     position: relative;
+    background-image: url(../../../assets/img/popup-bg.svg);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
 }
 
 .popup::-webkit-scrollbar {
@@ -43,12 +50,11 @@
     background-color: transparent;
 }
 
-
 .popup::-webkit-scrollbar-thumb {
     margin-right: 10px;
     transform: translateX(20px);
     border-radius: 10px;
-    background: rgb(170, 170, 170, .4);
+    background: rgba(170, 170, 170, 0.4);
 }
 
 .popup::-webkit-scrollbar-track {
@@ -57,11 +63,6 @@
 }
 
 .popup__title {
-    /* font-family: Roboto; */
-    /* font-size: 30px; */
-    /* font-style: normal; */
-    /* font-weight: 700; */
-    /* line-height: 36px; */
     margin: 0 0 10px 0;
     color: #E8E6D4;
     font-family: Inter;
@@ -87,8 +88,6 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* background: #fff; */
-    /* color: #313131; */
     box-shadow: none;
     padding: 0;
     font-size: 18px;
@@ -100,20 +99,8 @@
     border-radius: 0;
 }
 
-.popup-wrapper {
-    transition: all .4s ease-in-out;
-    transform: translateY(0);
-}
-
-.hidden .popup-wrapper {
-    transform: translateY(100px);
-}
-
 .popup__form input.error {
     border-color: #F5222D;
-}
-
-.popup {
 }
 
 .popup__image {
@@ -145,33 +132,74 @@
     cursor: pointer;
 }
 
-.popup__title {
+.popup__subtitle {
+    margin: 0 0 40px 0;
 }
 
-.popup__subtitle {margin: 0 0 40px 0;}
-
-.popup__form {
+.popup__form-fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.popup__form-fields {display: flex;flex-wrap: wrap;gap: 10px;}
-
-.popup__form-fields input {width: calc( 50% - 47px );}
+.popup__form-fields input {
+    width: calc(50% - 47px);
+}
 
 .popup__form-fields input[type="tel"] {
-    width: 100%
+    width: 100%;
 }
 
-.popup__form-contact-method {
+.popup__form-contact-options {
+    display: flex;
+    gap: 60px;
+    margin-top: 15px;
 }
 
-.popup__form-contact-options {display: flex;gap: 60px;margin-top: 15px;}
-
-.popup__form-submit {
+.popup__form-disclaimer {
+    color: #E8E6D4;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
 }
 
-.popup__form-disclaimer {color: #E8E6D4;text-align: center;/* font-family: Inter; */font-size: 12px;/* font-style: normal; */font-weight: 400;/* line-height: normal; */}
+@media screen and (max-width: 1024px) {
+    .popup-wrapper {
+        max-width: 400px;
+    }
 
-.popup__form input[type=submit] {
+    .popup-form {
+        background-size: 200px auto;
+    }
 
+    .popup__image {
+        display: none;
+    }
+
+    .popup__content {
+        width: 100%;
+        padding: 70px 20px 20px 20px;
+    }
+
+    .popup__title {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .popup__subtitle {
+        margin-bottom: 15px;
+    }
+
+    .popup__form-fields input {
+        width: 100%;
+    }
+
+    .popup__form-contact-options {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .popup__form-contact-options label {
+        width: 48%;
+    }
 }
-
