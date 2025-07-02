@@ -28,6 +28,80 @@
     color: #E8E6D4;
 }
 
-.select2-container .selection .select2-selection--single .select2-selection__arrow {top: 50%;margin-top: -15px;}
+.select2-container .selection .select2-selection--single .select2-selection__arrow {
+    top: 50%;
+    margin-top: -15px;
+}
 
-.select2-container .selection .select2-selection--single .select2-selection__arrow b {border-color: #E8E6D4 transparent;border-width: 5px 5px 0 5px;}
+.select2-container .selection .select2-selection--single .select2-selection__arrow b {
+    border-color: #E8E6D4 transparent;
+    border-width: 5px 5px 0 5px;
+}
+
+form {
+
+}
+
+form input {
+    border-radius: 6px;
+    border: 1px solid rgba(132, 168, 172, 0.40);
+    background: rgba(132, 168, 172, 0.20);
+    height: 50px;
+    padding: 0 20px;
+    font-family: 'Inter';
+    font-size: 16px;
+    color: #E8E6D4;
+}
+
+input::placeholder {
+    color: rgba(232, 230, 212, 0.50);
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+form input:active {
+
+}
+
+form input:focus {
+
+}
+
+form input:hover {
+
+}
+
+form input[type=submit] {
+    width: 100%;
+    font-weight: 700;
+}
+
+form input[type=submit].disabled,
+form input[type=submit][disabled] {
+    opacity: .7;
+    pointer-events: none;
+}
+
+form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+form label {
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    line-height: 1;
+}
+
+form input[type=radio] {
+    height: auto;
+    margin: 0;
+    height: 18px;
+    width: 18px;
+}

@@ -1,0 +1,177 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s ease-in-out;
+}
+
+.popup-overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popup-wrapper {
+    padding: 0;
+    /* width: 90%; */
+    max-width: 1200px;
+    position: relative;
+    /* border-radius: 24px; */
+    background: #FFF;
+    overflow: hidden;
+    background: #18383C;
+}
+
+.popup-form {
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap; /* важно для контента, чтобы он не заезжал под скролл */
+    align-items: center; /* чтобы padding добавлялся поверх ширины */
+    position: relative;
+}
+
+.popup::-webkit-scrollbar {
+    width: 5px !important;
+    background-color: transparent;
+}
+
+
+.popup::-webkit-scrollbar-thumb {
+    margin-right: 10px;
+    transform: translateX(20px);
+    border-radius: 10px;
+    background: rgb(170, 170, 170, .4);
+}
+
+.popup::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.popup__title {
+    /* font-family: Roboto; */
+    /* font-size: 30px; */
+    /* font-style: normal; */
+    /* font-weight: 700; */
+    /* line-height: 36px; */
+    margin: 0 0 10px 0;
+    color: #E8E6D4;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.popup-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.popup__form {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* background: #fff; */
+    /* color: #313131; */
+    box-shadow: none;
+    padding: 0;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.popup-wrapper {
+    transition: all .4s ease-in-out;
+    transform: translateY(0);
+}
+
+.hidden .popup-wrapper {
+    transform: translateY(100px);
+}
+
+.popup__form input.error {
+    border-color: #F5222D;
+}
+
+.popup {
+}
+
+.popup__image {
+    width: 570px;
+    height: auto;
+}
+
+.popup__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.popup__content {
+    width: 630px;
+    position: relative;
+    padding: 0 45px;
+    box-sizing: border-box;
+}
+
+.popup__close-btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.popup__title {
+}
+
+.popup__subtitle {margin: 0 0 40px 0;}
+
+.popup__form {
+}
+
+.popup__form-fields {display: flex;flex-wrap: wrap;gap: 10px;}
+
+.popup__form-fields input {width: calc( 50% - 47px );}
+
+.popup__form-fields input[type="tel"] {
+    width: 100%
+}
+
+.popup__form-contact-method {
+}
+
+.popup__form-contact-options {display: flex;gap: 60px;margin-top: 15px;}
+
+.popup__form-submit {
+}
+
+.popup__form-disclaimer {color: #E8E6D4;text-align: center;/* font-family: Inter; */font-size: 12px;/* font-style: normal; */font-weight: 400;/* line-height: normal; */}
+
+.popup__form input[type=submit] {
+
+}
+

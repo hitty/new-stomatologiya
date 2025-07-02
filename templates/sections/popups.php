@@ -1,0 +1,36 @@
+<div id="popup-callback" class="popup-overlay hidden" data-popup>
+    <div class="popup-wrapper">
+        <button class="popup__close-btn" type="button" data-close aria-label="Закрыть форму">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.0052 20C18.8745 20 18.745 19.9743 18.6243 19.9241C18.5036 19.874 18.3939 19.8005 18.3017 19.7079L0.291739 1.70038C0.104942 1.51358 -1.96822e-09 1.26023 0 0.99606C1.96824e-09 0.731889 0.104942 0.478537 0.291739 0.291739C0.478537 0.104942 0.731889 1.96823e-09 0.99606 0C1.26023 -1.96823e-09 1.51358 0.104942 1.70038 0.291739L19.7103 18.3017C19.8491 18.4409 19.9435 18.6182 19.9817 18.8111C20.0199 19.0039 20.0001 19.2038 19.9249 19.3854C19.8496 19.5671 19.7223 19.7224 19.5589 19.8317C19.3955 19.9411 19.2034 19.9997 19.0068 20H19.0052Z" fill="#E8E6D4"/><path d="M0.996857 20C0.80011 20 0.607783 19.9416 0.444156 19.8324C0.28053 19.7231 0.152942 19.5679 0.0774998 19.3862C0.00205786 19.2045 -0.0178552 19.0045 0.020275 18.8114C0.0584052 18.6184 0.152869 18.441 0.29174 18.3017L18.3017 0.291739C18.3942 0.199247 18.504 0.125877 18.6248 0.0758205C18.7457 0.0257638 18.8752 0 19.006 0C19.1368 0 19.2663 0.0257638 19.3872 0.0758205C19.508 0.125877 19.6178 0.199247 19.7103 0.291739C19.8028 0.384232 19.8762 0.494037 19.9262 0.614884C19.9763 0.735732 20.0021 0.865256 20.0021 0.99606C20.0021 1.12686 19.9763 1.25639 19.9262 1.37724C19.8762 1.49808 19.8028 1.60789 19.7103 1.70038L1.70038 19.7103C1.60793 19.8025 1.49821 19.8755 1.37748 19.9252C1.25676 19.975 1.12741 20.0004 0.996857 20Z" fill="#E8E6D4"/></svg>
+        </button>
+        <div class="popup popup-form">
+            <div class="popup__image">
+                <img src="<?=get_template_directory_uri()?>/assets/img/popup-callback.jpg" width="400" height="300" alt="Заказать обратный звонок" loading="lazy">
+            </div>
+            <div class="popup__content">
+                <h2 class="popup__title">Закажите обратный звонок</h2>
+                <p class="popup__subtitle">Заполните форму. Мы перезвоним вам в ближайшее время.</p>
+                <form class="popup__form">
+                    <div class="popup__form-fields">
+                        <input type="text" name="Имя" placeholder="Ваше имя" required>
+                        <input type="email" name="Email" placeholder="Ваш Email" required>
+                        <input type="tel" name="Телефон" placeholder="Номер телефона" required pattern="[\d\s\+\-\(\)]{7,}">
+                    </div>
+                    <fieldset class="popup__form-contact-method">
+                        <legend>Выберите удобный способ связи</legend>
+                        <div class="popup__form-contact-options">
+                            <label><input type="radio" name="contact_method" value="phone" checked> Телефон</label>
+                            <label><input type="radio" name="contact_method" value="telegram"> Telegram</label>
+                            <label><input type="radio" name="contact_method" value="whatsapp"> WhatsApp</label>
+                        </div>
+                    </fieldset>
+                    <input type="submit" class="popup__form-submit main-button" value="Отправить заявку">
+                    <div class="popup__form-disclaimer">
+                        Отправляя форму, вы даёте согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности.
+                    </div>
+                    <input type="hidden" name="title" value="Заказать обратный звонок">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
