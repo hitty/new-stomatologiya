@@ -31,6 +31,7 @@ function yourdent_enqueue_styles() {
     'reviews-section'       => '/assets/css/sections/reviews.css',
     'select2-vendor'        => '/assets/css/vendor/select2.min.css',
     'form'                  => '/assets/css/widgets/form.css',
+    'popup'                  => '/assets/css/widgets/popup.css',
     'branch-addresses'      => '/assets/css/sections/branch-addresses.css',
   ];
 
@@ -297,6 +298,9 @@ function getVideoLink($link) {
 // === Дополнительные файлы ===
 if (file_exists(__DIR__ . '/yourmed-data.php')) {
   require_once __DIR__ . '/yourmed-data.php';
+}
+if (file_exists(__DIR__ . '/includes/ajax.php')) {
+  require_once __DIR__ . '/includes/ajax.php';
 }
 
 // === Поддержка ЧПУ для single-doctors ===

@@ -80,7 +80,7 @@
       </div>
 
       <div class="callback-button">
-        <button>Заказать звонок</button>
+        <button data-popup-target="#popup-callback">Заказать звонок</button>
       </div>
     </div>
   </div>

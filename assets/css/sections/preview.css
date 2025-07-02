@@ -237,7 +237,7 @@
 
 .main-button {
   display: inline-block;
-  width: 209px;
+  width: max-content;
   height: 59px;
   padding: 0 24px;
   border-radius: 30px;
