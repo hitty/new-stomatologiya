@@ -6,7 +6,6 @@
 }
 
 .select2-container {
-    border: 1px solid #E8E6D4;
     border-radius: 6px;
     width: 100% !important;
 }
@@ -22,7 +21,7 @@
     background: transparent;
     color: #E8E6D4;
     height: auto;
-    border: none;
+    border: 1px solid #E8E6D4;
 }
 
 .select2-container .selection .select2-selection--single .select2-selection__rendered {

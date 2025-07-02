@@ -93,6 +93,7 @@
     user-select: none;
     -webkit-user-select: none;
     background-color: #18383C;
+    padding: 16px 20px;
 }
 
 .select2-results__option[aria-selected] {
@@ -383,8 +384,14 @@
 }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-    background-color: #E8E6D4;
-    color: white
+    background-color: #274b4f;
+    color: #E8E6D4;
+2
+3
+4
+5
+6
+    color: #E8E6D4;
 }
 
 .select2-container--default .select2-results__group {
