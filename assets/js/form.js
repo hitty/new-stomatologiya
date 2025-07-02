@@ -4,8 +4,9 @@ jQuery(document).ready(function($) {
         $('.select2-enable').each(function () {
             var _class = $(this).hasClass('topnav-location') ? 'locations-list' : '';
             $(this).select2({
-                selectionCssClass: _class,
+                minimumResultsForSearch: Infinity
             });
         })
     }
+
 })

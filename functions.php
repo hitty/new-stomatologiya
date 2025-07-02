@@ -319,3 +319,21 @@ function doctor_template_redirect() {
   }
 }
 add_action('template_redirect', 'doctor_template_redirect');
+
+function multi_array_search( $search_for, $search_in ) {
+	foreach ( $search_in as $element ) {
+		if ( ( $element == $search_for ) ) {
+			return true;
+		} elseif ( is_array( $element ) ) {
+			$result = multi_array_search( $search_for, $element );
+			if ( $result == true ) {
+				return true;
+			}
+		}
+	}
+
+	return false;
+}
+if( preg_match('#\/severnyy\/#msiU', $_SERVER['REQUEST_URI']) ) {
+	$chosen_clinic = 'Москва, Долгопрудненское шоссе, 6А';
+}
