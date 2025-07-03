@@ -2,6 +2,7 @@
 /**
  * Форма записи
  */
+require get_template_directory() . '/vendor/autoload.php';
 function form_send() {
 	$ajax_result = $content = [];
 	$data        = $_POST;
@@ -15,23 +16,26 @@ function form_send() {
 		$title = $data['title'] . '. Стоматология.';
 		unset( $data['title'] );
 	}
-	if (!empty($data['token'])) unset($data['token']);
+	if ( ! empty( $data['token'] ) ) {
+		unset( $data['token'] );
+	}
 
 	foreach ( $data as $k => $item ) {
 		$content[] = str_replace( '_', ' ', $k ) . ': ' . $item;
 	}
-	$args    = [
+	$args = [
 		'post_title'   => $title ?? '-',
 		'post_content' => implode( '<br>', $content ) . '<br> Страница отправки: ' . $_SERVER['HTTP_REFERER'],
 	];
 	try {
-		$email   = [];
+		$ajax_result = [];
+		$email             = [];
 		$ajax_result['ok'] = true;
-		//$ajax_result['email'] = sendEmail( $args['post_title'], $args['post_content'], $email, $files ?? [] );
-		// if ( ! DEBUG_MODE ) calltouchSend();
-		wp_send_json_success(['message' => 'Данные успешно отправлены']);
-	} catch (Exception $e) {
-		wp_send_json_error(['message' => 'Ошибка: ' . $e->getMessage()]);
+		$ajax_result['email'] = sendEmail( $args['post_title'], $args['post_content'], $email, $files ?? [] );
+		if ( ! DEBUG_MODE ) calltouchSend();
+		wp_send_json_success( $ajax_result );
+	} catch ( Exception $e ) {
+		wp_send_json_error( [ 'message' => 'Ошибка: ' . $e->getMessage() ] );
 	}
 
 }
@@ -40,7 +44,6 @@ add_action( 'wp_ajax_nopriv_form_send', 'form_send' );
 add_action( 'wp_ajax_form_send', 'form_send' );
 
 
-/*
 use Sendpulse\RestApi\ApiClient;
 use Sendpulse\RestApi\Storage\FileStorage;
 
@@ -59,14 +62,13 @@ $SPApiClient = new ApiClient( API_USER_ID, API_SECRET, new FileStorage() );
  *
  * @return mixed
  */
-/*
 function sendEmail( $title, $content, $emails_to = [], $files = [] ) {
 
-	checkCaptcha();
+	//checkCaptcha();
 
 	global $SPApiClient;
 
-	addDataToCsv( $title, $content );
+	// addDataToCsv( $title, $content );
 
 	$test_email = preg_match( '#test#msiu', $content );
 	$email      = [
@@ -112,7 +114,6 @@ function sendEmail( $title, $content, $emails_to = [], $files = [] ) {
 
 function calltouchSend() {
 	$call_value = $_COOKIE['_ct_session_id']; /* ID сессии Calltouch, полученный из cookie */
-/*
 	$ct_site_id = 72817;
 	$data       = "fio=" . urlencode( $_POST['ФИО'] ?? '-' )
 	              . "&phoneNumber=" . ( $_POST['Телефон'] ?? '' )
@@ -128,5 +129,3 @@ function calltouchSend() {
 	$calltouch = curl_exec( $ch );
 	curl_close( $ch );
 }
-
-*/
