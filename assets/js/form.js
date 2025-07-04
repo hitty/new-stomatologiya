@@ -131,6 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         res.json()
                     })
                     .then(data => {
+                        analyticsGoals(formData['title'] && formData['action'] ? formData['title'] : '');
                         form.reset();
                         document.location.href = '/thank-you/?callback'
                     })
@@ -141,5 +142,61 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
     });
+
+    var analyticsGoals = function (data) {
+        var vk_data = 'conversion';
+        switch (data) {
+            case 'Записаться к врачу':
+            case 'Вызвать врача':
+                data = 'recording';
+                vk_data = 'lead';
+                break;
+            case 'Заказать обратный звонок':
+                data = 'callback';
+                vk_data = 'contact';
+                break;
+            case 'Оставить отзыв':
+                data = 'reviews';
+                break;
+            case 'Быстрая запись':
+                data = 'quick_entry';
+                vk_data = 'lead';
+                break;
+            default:
+                if (data.indexOf('апись к врачу') >= 0) data = 'recording';
+                else if (data.indexOf('Записаться на прием') >= 0) {
+                    data = 'recording';
+                    vk_data = 'submit_application';
+                } else if (data.indexOf('Запись на услугу') >= 0) {
+                    data = 'recording';
+                    vk_data = 'submit_application';
+                } else if (data.indexOf('Запись на акцию') >= 0) {
+                    data = 'recording';
+                    vk_data = 'submit_application';
+                }
+                break;
+        }
+
+        console.log(data);
+        try {
+            ym(62486158, 'reachGoal', data);
+            console.log(`Metrika ${data}: ok`)
+        } catch (e) {
+            console.log(e.message);
+        }
+        try {
+            roistat.event.send('form_submit');
+            console.log('Roistat (form): ok')
+        } catch (e) {
+            console.log(e.message);
+        }
+        try {
+            VK.Goal(vk_data);
+            console.log(`VK ${vk_data}: ok`)
+        } catch (e) {
+            console.log(e.message);
+        }
+    }
+
 
 });

@@ -55,15 +55,10 @@ add_action('wp_enqueue_scripts', 'yourdent_enqueue_styles');
 // === Подключение скриптов ===
 function yourdent_enqueue_scripts() {
   $scripts = [
-    'header'                => '/assets/js/header.js',
-    'videos'                => '/assets/js/videos.js',
-    'doctors'               => '/assets/js/doctors.js',
-    'carousel'              => '/assets/js/carousel.js',
-    'certificates-carousel' => '/assets/js/certificates-carousel.js',
-    'branch-addresses'      => '/assets/js/branch-addresses.js', // подключаем твой JS
+    'init-functions'        => '/assets/js/on.init.functions.js',
   ];
 
-  foreach ($scripts as $handle => $path) {
+	foreach ($scripts as $handle => $path) {
     $full_path = get_template_directory() . $path;
     $ver = file_exists($full_path) ? filemtime($full_path) : null;
     wp_enqueue_script("yourdent-{$handle}", get_template_directory_uri() . $path, ['jquery'], $ver, true);
@@ -104,17 +99,14 @@ function yourdent_enqueue_scripts() {
     wp_enqueue_script('yourdent-services-js', get_template_directory_uri() . '/assets/js/services.js', [], filemtime(get_template_directory() . '/assets/js/services.js'), true);
   }
 
-  // Отзывы с Яндекс Карт
-  wp_enqueue_script('yourdent-reviews', get_template_directory_uri() . '/assets/js/reviews.js', ['jquery'], filemtime(get_template_directory() . '/assets/js/reviews.js'), true);
-
-  //Select2
-  wp_enqueue_script('yourdent-select2', get_template_directory_uri() . '/assets/js/vendor/select2.min.js', ['jquery'], filemtime( get_template_directory() . '/assets/js/vendor/select2.min.js' ), true);
-  wp_enqueue_script('yourdent-form', get_template_directory_uri() . '/assets/js/form.js', ['yourdent-select2'], filemtime( get_template_directory() . '/assets/js/form.js' ), true);
-
   // Карусель сертификатов
   if (is_page_template('templates/sections/certificates.php')) {
     wp_enqueue_script('yourdent-certificates-carousel', get_template_directory_uri() . '/assets/js/certificates-carousel.js', ['jquery'], filemtime(get_template_directory() . '/assets/js/certificates-carousel.js'), true);
   }
+
+  //проброс данных в javascript
+	wp_localize_script('yourdent-init-functions', 'directory_uri', ['stylesheet_directory_uri' => get_stylesheet_directory_uri()]);
+
 }
 add_action('wp_enqueue_scripts', 'yourdent_enqueue_scripts');
 
