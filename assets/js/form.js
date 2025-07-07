@@ -10,7 +10,6 @@ jQuery(document).ready(function ($) {
     }
 })
 
-document.addEventListener('DOMContentLoaded', function () {
     const openButtons = document.querySelectorAll('[data-popup-target]');
     const closeButtons = document.querySelectorAll('[data-close]');
     const popups = document.querySelectorAll('[data-popup]');
@@ -197,6 +196,3 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log(e.message);
         }
     }
-
-
-});

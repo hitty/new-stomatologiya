@@ -1,508 +1,511 @@
 body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: #18383C;
-  color: #E8E6D4;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #18383C;
+    color: #E8E6D4;
 }
 
+.container,
 .container-1200 {
-  width: 1200px;
-  margin: 0 auto;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .header {
-  width: 100%;
-  background-color: #18383C;
-  height: 81px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 100%;
+    background-color: #18383C;
+    height: 81px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-inner {
-  width: 100%;
-  max-width: 1160px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box;
+    width: 100%;
+    max-width: 1160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
 /* Левый блок */
 .left-block {
-  display: flex;
-  align-items: center;
-  gap: 48px;
-  width: 667.36px;
-  height: 47px;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    width: 667.36px;
+    height: 47px;
 }
 
 /* Логотип */
 .logo-block {
-  flex-shrink: 0;
+    flex-shrink: 0;
 }
 
 .logo {
-  width: 164px;
-  height: 47px;
+    width: 164px;
+    height: 47px;
 }
 
 /* Адрес */
 .address-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
 }
 
 .address-top {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  height: 17px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 17px;
 }
 
 .marker-icon {
-  width: 9.8px;
-  height: 14px;
+    width: 9.8px;
+    height: 14px;
 }
 
 .address-text {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1;
-  white-space: nowrap;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    white-space: nowrap;
 }
 
 .address-bottom {
-  display: flex;
-  align-items: center;
-  height: 17px;
+    display: flex;
+    align-items: center;
+    height: 17px;
 }
 
 .branch-toggle {
-  background: none;
-  border: none;
-  color: #E8E6D4;
-  font-size: 14px;
-  font-family: 'Inter', sans-serif;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  padding: 0;
-  white-space: nowrap;
+    background: none;
+    border: none;
+    color: #E8E6D4;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0;
+    white-space: nowrap;
 }
 
 .arrow-icon {
-  width: 10px;
-  height: 5px;
-  margin-top: 2px;
+    width: 10px;
+    height: 5px;
+    margin-top: 2px;
 }
 
 /* Телефон */
 .phone-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 4px;
-  height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    height: 40px;
 }
 
 .phone-top {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  height: 17px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 17px;
 }
 
 .phone-icon {
-  width: 13.56px;
-  height: 13.56px;
+    width: 13.56px;
+    height: 13.56px;
 }
 
 .phone-number {
-  font-size: 14px;
-  font-weight: 500;
-  text-decoration: none;
-  color: #E8E6D4;
-  white-space: nowrap;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #E8E6D4;
+    white-space: nowrap;
 }
 
 .phone-bottom {
-  font-size: 14px;
-  line-height: 1;
-  white-space: nowrap;
+    font-size: 14px;
+    line-height: 1;
+    white-space: nowrap;
 }
 
 /* Правый блок */
 .icons-block {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  height: 45px;
-  margin-left: 0; /* убираем */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 45px;
+    margin-left: 0; /* убираем */
 }
 
 .social-icons {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .icon-link img {
-  width: 30px;
-  height: 30px;
-  transition: all 0.3s ease;
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease;
 }
 
 .icon-link:hover img {
-  /* Без затемнения */
-  filter: none;
+    /* Без затемнения */
+    filter: none;
 }
 
 /* Анимации смены иконки */
 .fade-out {
-  opacity: 0;
-  transition: opacity 0.15s ease;
+    opacity: 0;
+    transition: opacity 0.15s ease;
 }
 
 .fade-in {
-  opacity: 1;
-  transition: opacity 0.15s ease;
+    opacity: 1;
+    transition: opacity 0.15s ease;
 }
 
 /* Доступность */
 .accessibility-icon img {
-  width: 45px;
-  height: 45px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .accessibility-icon img:hover {
-  filter: none;
+    filter: none;
 }
 
 /* Кнопка "Заказать звонок" */
 .callback-button button {
-  width: 182px;
-  height: 45px;
-  border-radius: 30px;
-  border: 1px solid #E8E6D4;
-  background-color: #76824A;
-  color: #E8E6D4;
-  font-size: 14px;
-  font-family: 'Inter', sans-serif;
-  cursor: pointer;
-  transition: all 0.3s ease;
+    width: 182px;
+    height: 45px;
+    border-radius: 30px;
+    border: 1px solid #E8E6D4;
+    background-color: #76824A;
+    color: #E8E6D4;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .callback-button button:hover {
-  background-color: #E8E6D4;
-  border: 1px solid #76824A;
-  color: #76824A;
+    background-color: #E8E6D4;
+    border: 1px solid #76824A;
+    color: #76824A;
 }
 
 /* Универсальная основная кнопка */
 .main-button {
-  display: inline-block;
-  padding: 0 24px;
-  height: 45px;
-  border-radius: 30px;
-  border: 1px solid #E8E6D4;
-  background-color: #76824A;
-  color: #E8E6D4;
-  font-size: 14px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-align: center;
-  line-height: 45px;
-  white-space: nowrap;
+    display: inline-block;
+    padding: 0 24px;
+    height: 45px;
+    border-radius: 30px;
+    border: 1px solid #E8E6D4;
+    background-color: #76824A;
+    color: #E8E6D4;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    line-height: 45px;
+    white-space: nowrap;
 }
 
 /* Ховер */
 .main-button:hover {
-  background-color: #E8E6D4;
-  border: 1px solid #76824A;
-  color: #76824A;
+    background-color: #E8E6D4;
+    border: 1px solid #76824A;
+    color: #76824A;
 }
 
 /* Эффект нажатия */
 .main-button:active {
-  transform: scale(0.98);
+    transform: scale(0.98);
 }
 
 .branch-selector {
-  position: relative;
+    position: relative;
 }
 
 .branches-dropdown {
-  position: absolute;
-  top: 100%;
-  margin-top: 8px;
-  background-color: #E8E6D4;
-  width: 260px;
-  padding: 10px 20px;
-  z-index: 10000; /* увеличено, чтобы не перекрывалось */
-  border-radius: 4px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  color: #76824A;
+    position: absolute;
+    top: 100%;
+    margin-top: 8px;
+    background-color: #E8E6D4;
+    width: 260px;
+    padding: 10px 20px;
+    z-index: 10000; /* увеличено, чтобы не перекрывалось */
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #76824A;
 
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
 }
 
 .branches-dropdown.active {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 .branch-item {
-  color: #76824A;
-  width: 220px;
-  margin-bottom: 15px;
-  cursor: pointer;
-  position: relative;
-  transition: color 0.2s ease;
+    color: #76824A;
+    width: 220px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.2s ease;
 }
 
 .branch-item::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  width: 100%;
-  height: 1px;
-  background-color: rgba(118, 130, 74, 0.2); /* 20% прозрачности */
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(118, 130, 74, 0.2); /* 20% прозрачности */
 }
 
 .branch-item1 {
-  color: #76824A;
-  width: 220px;
-  margin-bottom: 15px;
-  cursor: pointer;
-  position: relative;
-  transition: color 0.2s ease;
+    color: #76824A;
+    width: 220px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.2s ease;
 }
 
 .branch-item:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .branch-item1:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .branch-item:last-child::after {
-  display: none;
+    display: none;
 }
 
 .branch-item1:last-child::after {
-  display: none;
+    display: none;
 }
 
 .branch-item:hover {
-  color: #495b2e; /* Ещё темнее — насыщенный оливковый */
+    color: #495b2e; /* Ещё темнее — насыщенный оливковый */
 }
+
 .branch-item1:hover {
-  color: #495b2e; /* Ещё темнее — насыщенный оливковый */
+    color: #495b2e; /* Ещё темнее — насыщенный оливковый */
 }
 
 .navbar-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: #18383C;
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-  height: 78px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #18383C;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    height: 78px;
 }
 
 /* Навигация фиксированная при скролле */
 .navbar-section {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  background-color: #18383C;
-  height: 78px;
-  width: 1160px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-	padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #18383C;
+    height: 78px;
+    width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
 /* Левая часть с кнопками */
 .nav-links {
-  display: flex;
-  gap: 40px;
-  height: 100%;
-  align-items: center;
-  margin-top: 0; /* обнуляем если съехало */
+    display: flex;
+    gap: 40px;
+    height: 100%;
+    align-items: center;
+    margin-top: 0; /* обнуляем если съехало */
 }
 
 /* Общий стиль кнопок */
 .nav-link {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  color: #E8E6D4;
-  text-decoration: none;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
-  display: inline-flex;
-  align-items: center; /* Центрирует текст и треугольник по вертикали */
-  line-height: 1;
-  white-space: nowrap;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #E8E6D4;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    display: inline-flex;
+    align-items: center; /* Центрирует текст и треугольник по вертикали */
+    line-height: 1;
+    white-space: nowrap;
 }
 
 .nav-link:hover {
-  opacity: 0.6;
+    opacity: 0.6;
 }
 
 /* Треугольник возле "Услуги" и "Все зубы в рассрочку +" */
 .nav-link .triangle {
-  margin-left: 5px;
-  border: solid #E8E6D4;
-  border-width: 0 5px 8px 5px;
-  width: 0;
-  height: 0;
-  border-color: transparent transparent #E8E6D4 transparent;
+    margin-left: 5px;
+    border: solid #E8E6D4;
+    border-width: 0 5px 8px 5px;
+    width: 0;
+    height: 0;
+    border-color: transparent transparent #E8E6D4 transparent;
 }
 
 /* Правая часть с кнопками */
 .nav-actions {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  height: 46px;
-  margin-top: 14.5px;
-  margin-bottom: 14.5px;
-  margin-left: 140px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: 46px;
+    margin-top: 14.5px;
+    margin-bottom: 14.5px;
+    margin-left: 140px;
 }
 
 /* Кнопка "Все зубы в рассрочку +" */
 .nav-action-button {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  color: #E8E6D4;
-  text-decoration: none;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  line-height: 1;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #E8E6D4;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
 }
 
 .nav-action-button:hover {
-  opacity: 0.6;
+    opacity: 0.6;
 }
 
 /* Круглая кнопка-гамбургер */
 .circle-button {
-  width: 45px;
-  height: 46px;
-  padding: 18px 13px;
-  background-color: #E8E6D4;
-  border: 1px solid #76824A;
-  border-radius: 30px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease;
+    width: 45px;
+    height: 46px;
+    padding: 18px 13px;
+    background-color: #E8E6D4;
+    border: 1px solid #76824A;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
 }
 
 .circle-button:hover {
-  background-color: #76824A;
-  border-color: #E8E6D4;
+    background-color: #76824A;
+    border-color: #E8E6D4;
 }
 
 .triangle {
-  display: inline-block;
-  margin-left: 5px;
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #E8E6D4;
+    display: inline-block;
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #E8E6D4;
 }
 
 .triangle-up {
-  display: inline-block;
-  margin-left: 5px;
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid #E8E6D4; /* Стрелка вверх */
+    display: inline-block;
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #E8E6D4; /* Стрелка вверх */
 }
 
 /* Треугольник вниз для "Услуги" */
 .triangle-down {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 5px; /* Расстояние между словом и треугольником */
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #E8E6D4;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 5px; /* Расстояние между словом и треугольником */
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #E8E6D4;
 }
 
 /* Внутренние полоски */
 .burger-lines {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 19px;
-  height: 10px;
-  gap: 2px; /* Правильный отступ между 3 полосками */
-  pointer-events: none; /* чтобы клик не мешал */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 19px;
+    height: 10px;
+    gap: 2px; /* Правильный отступ между 3 полосками */
+    pointer-events: none; /* чтобы клик не мешал */
 }
+
 .burger-line {
-  width: 19px;
-  height: 2px;
-  background-color: #76824A;
-  border-radius: 2px;
-  transition: background-color 0.3s ease;
+    width: 19px;
+    height: 2px;
+    background-color: #76824A;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
 }
 
 .circle-button:hover .burger-line {
-  background-color: #E8E6D4;
+    background-color: #E8E6D4;
 }
 
 /* Адаптив */
 @media (max-width: 1024px) {
-  .header-inner {
-    flex-wrap: wrap;
-    gap: 12px;
-    justify-content: center;
-  }
+    .header-inner {
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+    }
 
-  .left-block {
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-  }
+    .left-block {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
 
-  .icons-block {
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-left: 0;
-  }
+    .icons-block {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
 
-  .address-block,
-  .phone-block {
-    align-items: center;
-  }
+    .address-block,
+    .phone-block {
+        align-items: center;
+    }
 }
