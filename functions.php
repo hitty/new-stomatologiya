@@ -310,7 +310,7 @@ add_filter('query_vars', 'doctor_query_vars');
 function doctor_template_redirect() {
   $slug = get_query_var('doctor_slug');
   if ($slug) {
-    include get_template_directory() . '/single-doctor-json.php';
+    include get_template_directory() . '/single-doctors.php';
     exit;
   }
 }

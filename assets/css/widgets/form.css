@@ -38,8 +38,8 @@
     border-width: 5px 5px 0 5px;
 }
 
-form {
-
+form .select2-enable:not(.select2-hidden-accessible){
+    display: none;
 }
 
 form input {

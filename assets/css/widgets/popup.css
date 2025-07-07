@@ -34,17 +34,18 @@
     transform: translateY(100px);
 }
 
-.popup-form {
+.dent-form {
     height: 100%;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     position: relative;
+}
+.popup .dent-form {
     background-image: url(../../../assets/img/popup-bg.svg);
     background-position: 100% 0;
     background-repeat: no-repeat;
-}
-
+} 
 .popup::-webkit-scrollbar {
     width: 5px !important;
     background-color: transparent;
@@ -62,7 +63,7 @@
     background-color: transparent;
 }
 
-.popup__title {
+.dent-form__title {
     margin: 0 0 10px 0;
     color: #E8E6D4;
     font-family: Inter;
@@ -82,7 +83,7 @@
     cursor: pointer;
 }
 
-.popup__form {
+.dent-form__form {
     width: 100%;
     margin: 0;
     display: flex;
@@ -99,23 +100,24 @@
     border-radius: 0;
 }
 
-.popup__form input.error {
+.dent-form__form input.error {
     border-color: #F5222D;
 }
 
-.popup__image {
-    width: 570px;
+.dent-form__image {
+    width: 47%;
     height: auto;
 }
 
-.popup__image img {
+.dent-form__image img {
     width: 100%;
     height: 100%;
+    border-radius: 6px;
     object-fit: cover;
 }
 
-.popup__content {
-    width: 630px;
+.dent-form__content {
+    width: 53%;
     position: relative;
     padding: 0 45px;
     box-sizing: border-box;
@@ -132,31 +134,31 @@
     cursor: pointer;
 }
 
-.popup__subtitle {
+.dent-form__subtitle {
     margin: 0 0 40px 0;
 }
 
-.popup__form-fields {
+.dent-form__fields {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-.popup__form-fields input {
+.dent-form__fields input {
     width: calc(50% - 50px);
 }
 
-.popup__form-fields input[type="tel"] {
+.dent-form__fields input[type="tel"] {
     width: 100%;
 }
 
-.popup__form-contact-options {
+.dent-form__contact-options {
     display: flex;
     gap: 60px;
     margin-top: 15px;
 }
 
-.popup__form-disclaimer {
+.dent-form__disclaimer {
     color: #E8E6D4;
     text-align: center;
     font-size: 12px;
@@ -168,38 +170,38 @@
         max-width: 400px;
     }
 
-    .popup-form {
+    .dent-form {
         background-size: 200px auto;
     }
 
-    .popup__image {
+    .dent-form__image {
         display: none;
     }
 
-    .popup__content {
+    .dent-form__content {
         width: 100%;
         padding: 70px 20px 20px 20px;
     }
 
-    .popup__title {
+    .dent-form__title {
         font-size: 28px;
         margin-bottom: 15px;
     }
 
-    .popup__subtitle {
+    .dent-form__subtitle {
         margin-bottom: 15px;
     }
 
-    .popup__form-fields input {
+    .dent-form__fields input {
         width: 100%;
     }
 
-    .popup__form-contact-options {
+    .dent-form__contact-options {
         flex-wrap: wrap;
         gap: 10px;
     }
 
-    .popup__form-contact-options label {
+    .dent-form__contact-options label {
         width: 48%;
     }
 }

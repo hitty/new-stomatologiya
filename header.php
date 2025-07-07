@@ -89,14 +89,14 @@
 <div class="navbar-wrapper">
   <section class="navbar-section">
     <div class="nav-links">
-      <a class="nav-link" href="https://new.yourmed24.ru/services/">Услуги <span class="triangle-down"></span></a>
-      <a class="nav-link" href="https://new.yourmed24.ru/doctors/">Врачи</a>
-      <a class="nav-link" href="https://new.yourmed24.ru/stocks/">Акции 🎁</a>
-      <a class="nav-link" href="https://new.yourmed24.ru/prices/">Цены</a>
+      <a class="nav-link" href="/services/">Услуги <span class="triangle-down"></span></a>
+      <a class="nav-link" href="/doctors/">Врачи</a>
+      <a class="nav-link" href="/stocks/">Акции 🎁</a>
+      <a class="nav-link" href="/prices/">Цены</a>
       <a class="nav-link" href="#">Кейсы</a>
       <a class="nav-link" href="#">О клинике</a>
-      <a class="nav-link" href="https://new.yourmed24.ru/articles/">Статьи</a>
-      <a class="nav-link" href="https://new.yourmed24.ru/regulatory-documents/">Контакты</a>
+      <a class="nav-link" href="/articles/">Статьи</a>
+      <a class="nav-link" href="/regulatory-documents/">Контакты</a>
     </div>
 
     <div class="nav-actions">
