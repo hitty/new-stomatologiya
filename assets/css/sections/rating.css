@@ -1,11 +1,11 @@
 .rating-section {
-  width: 1200px;
-  height: 569px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
+  /* width: 1200px; */
+  /* height: 569px; */
+  /* margin: 0 auto; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* padding: 0; */
 }
 
 .rating-container {
@@ -19,12 +19,12 @@
 
 /* Текст для "Независимые рейтинги и отзывы пациентов" */
 .rating-text {
-  width: 480px;
-  padding: 100px 0 30px;
-  text-align: center;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  box-sizing: border-box;
+  /* width: 480px; */
+  /* padding: 100px 0 30px; */
+  /* text-align: center; */
+  /* word-wrap: break-word; */
+  /* overflow-wrap: break-word; */
+  /* box-sizing: border-box; */
 }
 
 .rating-text-part {

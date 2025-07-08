@@ -1,14 +1,14 @@
 .branch-addresses {
-  width: 1200px;
-  height: 700px;
-  margin: 0 auto;
-  padding: 150px 20px 0;
-  color: #E8E6D4;
-  font-family: 'Inter', sans-serif;
-  user-select: none;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+  /* width: 1200px; */
+  /* height: 700px; */
+  /* margin: 0 auto; */
+  /* padding: 150px 20px 0; */
+  /* color: #E8E6D4; */
+  /* font-family: 'Inter', sans-serif; */
+  /* user-select: none; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* box-sizing: border-box; */
 }
 
 .branch-addresses__title {

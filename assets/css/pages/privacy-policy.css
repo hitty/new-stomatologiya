@@ -3,13 +3,16 @@
 }
 
 .container {
-  width: 1200px;
+  width: 1160px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  /* gap: 40px; */
 }
-
+section{
+  margin: 100px auto 0;
+  padding: 0;
+}
 .policy-header {
   width: 1160px;
   height: 72px;

@@ -39,7 +39,7 @@ global $wpdb, $clinics_list, $services_categories, $doctors_list, $stomatology_c
 ?>
 
   <!-- СЕКЦИЯ ФИЛЬТРОВ -->
-  <section class="all-doctors-filter-section">
+  <section class="all-doctors-filter-section mt-0">
     <div class="all-doctors-filter-wrapper">
       <div class="all-doctors-filter-inner">
         <div class="all-doctors-filter-heading">
@@ -79,7 +79,7 @@ global $wpdb, $clinics_list, $services_categories, $doctors_list, $stomatology_c
   </section>
 
   <!-- СЕКЦИЯ КАРТОЧЕК -->
-  <section class="all-doctors-cards-section">
+  <section class="all-doctors-cards-section mt-0">
     <div class="all-doctors-cards-wrapper">
       <div class="all-doctors-cards-track">
 

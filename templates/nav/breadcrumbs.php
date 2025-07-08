@@ -11,7 +11,7 @@ if ($align === 'top') $alignClass = 'align-top';
 elseif ($align === 'bottom') $alignClass = 'align-bottom';
 ?>
 
-<section class="breadcrumb-nav <?php echo esc_attr($alignClass); ?>" style="min-height: <?php echo intval($height); ?>px;">
+<div class="breadcrumb-nav <?php echo esc_attr($alignClass); ?>" style="min-height: <?php echo intval($height); ?>px;">
   <div class="breadcrumb-container">
     <?php foreach ($items as $item): ?>
       <a class="breadcrumb-item" href="<?php echo esc_url($item['url']); ?>">
@@ -24,4 +24,4 @@ elseif ($align === 'bottom') $alignClass = 'align-bottom';
       <span class="breadcrumb-item current"><?php echo esc_html($current); ?></span>
     <?php endif; ?>
   </div>
-</section>
+</div>
