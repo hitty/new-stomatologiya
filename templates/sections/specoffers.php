@@ -45,7 +45,8 @@
             <div class="special-card__description"><?= esc_html($description); ?></div>
             <div class="special-card__price"><?= esc_html($price); ?> руб</div>
 
-            <button class="main-button special-card__button">Записаться по акции</button>
+            <button class="main-button special-card__button" data-popup-target="#popup-promotion" data-title="Записаться по акции: <?= esc_html($name); ?>, <?= esc_html($price); ?> руб">Записаться по акции</button>
+
           </div>
 
           <?php if ($photo): ?>

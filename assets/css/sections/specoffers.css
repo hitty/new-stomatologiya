@@ -94,7 +94,7 @@
 
 .special-card__name-wrapper {
   width: 340px;
-  height: 31px;
+  /* height: 31px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -102,11 +102,11 @@
 }
 
 .special-card__name {
-  font-family: Inter, sans-serif;
-  font-weight: 500;
+  /* font-family: Inter, sans-serif; */
+  /* font-weight: 500; */
   font-size: 26px;
   color: #18383C;
-  width: 294px;
+  /* width: 294px; */
 }
 
 .special-card__info {
@@ -131,7 +131,7 @@
   font-weight: 500;
   font-size: 14px;
   color: #18383C;
-  line-height: 100%;
+  /* line-height: 100%; */
   margin-bottom: 10px;
 }
 

@@ -22,6 +22,7 @@ jQuery(document).ready(function ($) {
                 popup.classList.remove('hidden');
                 document.body.style.overflow = 'hidden';
             }
+            if( btn.classList.contains('special-card__button') ) document.querySelector('#popup-promotion input[name="title"]').value = btn.getAttribute('data-title');
         });
     });
 
