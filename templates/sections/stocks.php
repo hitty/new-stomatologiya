@@ -6,6 +6,7 @@ $stocks = get_posts([
 ?>
 
 <section class="stocks-section">
+    <div class="container">
   <div class="stocks-container">
     <?php foreach ($stocks as $stock) :
       $title = get_field('stocks_name', $stock->ID);
@@ -25,5 +26,6 @@ $stocks = get_posts([
         <?php endif; ?>
       </div>
     <?php endforeach; ?>
+  </div>
   </div>
 </section>

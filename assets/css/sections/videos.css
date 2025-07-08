@@ -1,7 +1,7 @@
 .videos-section {
-  width: 1200px;
-  height: 793.57px;
-  margin: 0 auto;
+  /* width: 1200px; */
+  /* height: 793.57px; */
+  /* margin: 0 auto; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,8 +10,8 @@
 }
 
 .videos-section .container {
-  width: 1160px;
-  padding: 0 0 100px 0;
+  /* width: 1160px; */
+  /* padding: 0 0 100px 0; */
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,9 +1,10 @@
 <section class="services-clinic-block">
+    <div class="container">
   <div class="services-clinic-inner">
-    <div class="services-clinic-title">
+    <h2 class="services-clinic-title">
       <span class="title-part1">Услуги</span>
       <span class="title-part2">клиник</span>
-    </div>
+    </h2>
 
     <div class="services-groups-wrapper">
       <?php
@@ -72,5 +73,6 @@
     <div class="services-button-wrapper">
   <a href="/services" class="main-button services-more-btn">Смотреть все услуги клиник</a>
 </div>
+  </div>
   </div>
 </section>

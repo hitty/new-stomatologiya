@@ -5,6 +5,7 @@
 ?>
 
 <section class="branch-addresses">
+    <div class="container">
   <h2 class="branch-addresses__title">Адреса филиалов</h2>
 
   <div class="branch-addresses__buttons">
@@ -20,5 +21,6 @@
     </div>
     <div class="branch-addresses__map">
     </div>
+  </div>
   </div>
 </section>

@@ -3,6 +3,7 @@ global $wpdb, $clinics_list, $services_categories, $doctors_list, $stomatology_c
 ?>
 
 <section class="doctors-section">
+    <div class="container">
     <div class="doctors-container">
 
         <div class="doctors-header">
@@ -47,5 +48,6 @@ global $wpdb, $clinics_list, $services_categories, $doctors_list, $stomatology_c
             <a href="/doctors" class="doctors-view-all">Смотреть всех врачей клиник</a>
         </div>
 
+    </div>
     </div>
 </section>

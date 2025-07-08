@@ -1,114 +1,126 @@
+h2 {
+    margin: 0 0 30px;
+    font-weight: 500;
+    font-size: 40px;
+}
+
 /* ==== Универсальная кнопка ==== */
 .main-button {
-  display: inline-block;
-  padding: 0 24px;
-  border-radius: 30px;
-  border: 1px solid #E8E6D4;
-  background-color: #76824A;
-  color: #E8E6D4;
-  font-size: 14px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-align: center;
-  white-space: nowrap;
-  text-decoration: none;
-  box-sizing: border-box;
+    display: inline-block;
+    padding: 0 24px;
+    border-radius: 30px;
+    border: 1px solid #E8E6D4;
+    background-color: #76824A;
+    color: #E8E6D4;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.mt-0 {
+    margin-top: 0 !important;
 }
 
 /* ==== Универсальный Ховер ==== */
 .main-button:hover {
-  background-color: #E8E6D4;
-  border: 1px solid #76824A;
-  color: #76824A;
-  text-decoration: none;
+    background-color: #E8E6D4;
+    border: 1px solid #76824A;
+    color: #76824A;
+    text-decoration: none;
 }
 
 /* ==== Стелочки для карусели ==== */
 .arrow-button {
-  width: 40.99px;
-  height: 40px;
-  padding: 0;
-  border-radius: 100px;
-  background-color: #76824A;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  border: none;
+    width: 40.99px;
+    height: 40px;
+    padding: 0;
+    border-radius: 100px;
+    background-color: #76824A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
 }
 
 .arrow-button svg {
-  width: 6.99px;
-  height: 12px;
+    width: 6.99px;
+    height: 12px;
 }
 
 .arrow-button svg path {
-  stroke: #E8E6D4;
-  stroke-width: 2;
+    stroke: #E8E6D4;
+    stroke-width: 2;
 }
 
 .arrow-button:hover,
 .arrow-button:active {
-  background-color: #E8E6D4;
+    background-color: #E8E6D4;
 }
 
 .arrow-button:hover svg path,
 .arrow-button:active svg path {
-  stroke: #76824A;
+    stroke: #76824A;
 }
 
 /* ==== Хлебные крошки ==== */
 /* ==== Хлебные крошки ==== */
 .breadcrumb-nav {
-  background-color: #18383C;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+    background-color: #18383C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .breadcrumb-nav.align-top {
-  align-items: flex-start;
+    align-items: flex-start;
 }
+
 .breadcrumb-nav.align-center {
-  align-items: center;
+    align-items: center;
 }
+
 .breadcrumb-nav.align-bottom {
-  align-items: flex-end;
+    align-items: flex-end;
 }
 
 .breadcrumb-container {
-  width: 1160px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1;
-  color: #E8E6D4;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 20px;
+    width: 1160px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1;
+    color: #E8E6D4;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
 }
 
 .breadcrumb-item {
-  white-space: nowrap;
-  vertical-align: middle;
-  color: #E8E6D4;
-  text-decoration: none;
-  transition: opacity 0.3s ease;
+    white-space: nowrap;
+    vertical-align: middle;
+    color: #E8E6D4;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
 }
 
 .breadcrumb-item:hover {
-  opacity: 0.6;
+    opacity: 0.6;
 }
 
 .breadcrumb-item.current {
-  font-weight: 500;
-  pointer-events: none;
+    font-weight: 500;
+    pointer-events: none;
 }
 
 .breadcrumb-separator {
-  color: #E8E6D4;
-  margin: 0 10px;
+    color: #E8E6D4;
+    margin: 0 10px;
 }

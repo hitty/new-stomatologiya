@@ -1,9 +1,10 @@
 <section class="rating-section">
+    <div class="container">
   <div class="rating-container">
-    <div class="rating-text">
+    <h2 class="rating-text">
       <div class="rating-text-part rating-text-part-left">Независимые</div>
       <div class="rating-text-part rating-text-part-right">рейтинги и отзывы пациентов</div>
-    </div>
+    </h2>
 
     <div class="rating-cards-container">
       <div class="rating-cards">
@@ -39,4 +40,4 @@
       </div>
     </div>
   </div>
-</section>
+    </div></section>

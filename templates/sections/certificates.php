@@ -8,6 +8,7 @@ if ($certs):
   $has_carousel = count($certs) > 4;
 ?>
 <section class="certificates-section">
+    <div class="container">
   <div class="certificates-container <?php echo $has_carousel ? 'has-carousel' : ''; ?>">
     <?php foreach ($certs as $cert):
       $img = get_field('cert_img', $cert->ID);
@@ -33,5 +34,6 @@ if ($certs):
       </button>
     </div>
   <?php endif; ?>
+    </div>
 </section>
 <?php endif; ?>

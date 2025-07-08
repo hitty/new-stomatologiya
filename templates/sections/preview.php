@@ -28,6 +28,7 @@ function highlight_slash_text($text) {
 ?>
 
 <section class="preview-block">
+    <div class="container">
   <div class="preview-inner">
     <div class="preview-text">
       <div class="preview-title">
@@ -37,8 +38,7 @@ function highlight_slash_text($text) {
       <div class="preview-description">
         <?php echo esc_html($preview_description); ?>
       </div>
-
-      <a href="#appointment" class="main-button">Записаться на прием</a>
+      <button data-popup-target="#appointment" class="main-button">Записаться на прием</button>
     </div>
 
     <?php if (!empty($preview_photo)): ?>
@@ -46,5 +46,6 @@ function highlight_slash_text($text) {
         <img src="<?php echo esc_url($preview_photo['url']); ?>" alt="<?php echo esc_attr($preview_photo['alt']); ?>">
       </div>
     <?php endif; ?>
+  </div>
   </div>
 </section>

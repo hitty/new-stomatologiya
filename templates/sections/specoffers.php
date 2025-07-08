@@ -1,4 +1,5 @@
 <section class="special-offers">
+    <div class="container">
   <div class="special-offers__header">
     <h2 class="special-offers__title">
       <span class="special-offers__title-light">Специальные</span>
@@ -59,5 +60,6 @@
 
   <div class="special-offers__more">
   <button class="main-button special-offers__more-btn">Смотреть все акции клиники</button>
+</div>
 </div>
 </section>
