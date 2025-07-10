@@ -1,0 +1,26 @@
+.page-template-page-thank-you{
+    overflow: hidden;
+}
+.page-template-page-thank-you .thank-you{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+}
+.page-template-page-thank-you .thank-you{
+
+}
+.header > *{
+    filter: blur(10px);
+}
+.navbar-wrapper{
+    filter: blur(10px);
+}
+.thank-you .dent-form__content{
+    text-align: center;
+}

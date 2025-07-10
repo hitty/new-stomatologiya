@@ -17,7 +17,7 @@ $stocks = get_posts([
         <div class="stock-info">
           <h3 class="stock-title"><?= esc_html($title); ?></h3>
           <p class="stock-conditions"><?= esc_html($conditions); ?></p>
-          <a href="/contact" class="stock-button">Оформить лечение без переплат</a>
+            <button class="main-button special-card__button" data-popup-target="#popup-promotion" data-title="Оформить лечение без переплат">Оформить лечение без переплат</button>
         </div>
         <?php if ($photo) : ?>
           <div class="stock-image-wrapper">
